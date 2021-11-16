@@ -12,7 +12,7 @@ void loop() {
   sensorvalue=analogRead(pinI);
 int outputvalue=0;
   outputvalue=map(sensorvalue,0,1023,0,255);
-  analogWrite(pinO,sensorvalue);
+  analogWrite(pinO,outputvalue);
   Serial.print(sensorvalue);
   Serial.print(outputvalue);
 
